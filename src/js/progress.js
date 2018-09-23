@@ -12,7 +12,7 @@ var progress = $("#progress"),
 
 if (numValid == 0) {
     progress.attr("value", "0");
-    progressMessage.text("The form, it wants you.");
+    progressMessage.text("Complete the form.");
 }
 if (numValid == 1) {
     progress.attr("value", "20");
@@ -32,7 +32,7 @@ if (numValid == 4) {
 }
 if (numValid == 5) {
     progress.attr("value", "95");
-    progressMessage.text("SO CLOSE. PRESS THE THING.");
+    progressMessage.text("SO CLOSE.");
 }
   
 });
