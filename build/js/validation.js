@@ -1,0 +1,1 @@
+function checkForm(e){var a=document.getElementById("name").value,t=document.getElementById("last-name").value,m=document.getElementById("surname").value,n=a.match(/^[A-Za-zА-Яа-я ]*[A-Za-zА-Яа-я ]+$/),c=t.match(/^[A-Za-zА-Яа-я ]*[A-Za-zА-Яа-я ]+$/),u=m.match(/^[A-Za-zА-Яа-я ]*[A-Za-zА-Яа-я ]+$/);if(!n&&!c&&!u)return alert("Имя введено неверно, пожалуйста исправьте ошибку"),!1}

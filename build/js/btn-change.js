@@ -1,0 +1,1 @@
+$(".btn").click(function(){var s=$(this);s.hasClass("btn-simple")?s.removeClass():s.hasClass("btn-link")?s.removeClass("btn-link").addClass("btn-simple"):s.addClass("btn-simple")});
