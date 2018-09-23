@@ -13,9 +13,11 @@ h2 {
 	font-size: 20px;
 }
 h3 {
+	padding-top: 10px;
 	font-size: 16px;
 	margin-bottom: 10px;
 }
+
 .col {
 		padding: 20px;
 }
@@ -28,7 +30,7 @@ h3 {
 	color: #000;
 }
  .important-col {
-	border: 1px solid #000;
+	border-radius: 5px;
 }
 fieldset {
 	border: 1px solid #000;
