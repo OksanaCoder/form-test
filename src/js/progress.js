@@ -7,7 +7,7 @@ $("#form input[required], #form select[required]").each(function() {
     }
 });
 
-var progress = $(".progress"),
+var progress = $(".progress-form"),
     progressMessage = $(".progress-message");
 
 if (numValid == 0) {
@@ -15,20 +15,19 @@ if (numValid == 0) {
     progressMessage.text("Complete the form.");
 }
 if (numValid == 1) {
-    progress.attr("value", "20");
+    progress.attr("value", "33");
     progressMessage.text("There you go, great start!");
+    progress.addClass('light-green');
 }
 if (numValid == 2) {
-    progress.attr("value", "40");
+    progress.attr("value", "66");
     progressMessage.text("Nothing can stop you now.");
+    progress.addClass('green');
 }
 if (numValid == 3) {
-    progress.attr("value", "80");
-    progressMessage.text("SO CLOSE.");
-}
-if (numValid == 4) {
     progress.attr("value", "100");
-    progressMessage.text("They are going to write songs about you.");
+    progressMessage.text("Completed!");
+    progress.addClass('dark-green');
 }
 
 });

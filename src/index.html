@@ -55,17 +55,21 @@
     </div>
     <div class="progress-wrap">
     <div class="progress-message" id="progress-message">Complete the form!</div>
-    <progress max="100" value="0" class="progress"></progress>
+    <progress max="100" value="0" class="progress progress-form"></progress>
 
     </div>
+
      <div class="form-group">
-    <label for="number">Введите число!</label>
-    <input type="text" class="form-control" id="number" min="0" max="100" required>
-  </div>
-   <button type="button" class="btn btn-primary">Применить</button>
+	    <label for="number">Введите число!</label>
+	    <input type="text" class="form-control" id="number" min="0" max="100" required>
+    </div>
+
+    
+   <button type="button" class="btn btn-primary add-val">Применить</button>
+
    <div class="progress-wrap">
-     <div class="progress-message">Ваша форма заполнена на <span class="output">___</span> %</div>  
-    <progress max="100" value="0" class="progress"></progress>
+	     <div class="progress-message">Ваша форма заполнена на <span class="output">___</span> %</div>  
+	    <progress max="100" value="0" id="myBar" class="progress"></progress>
     </div>
 </form>
 		<div class="button-reg">button says boo</div>
@@ -73,25 +77,22 @@
 	  </div>
 	</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/validation.js"></script>
-  <script type="text/javascript" src="js/progress.js">
-  	
-  </script>
-  	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script>
-  $('.btn-1').click(function() {
-  $('.btn-1').toggleClass('btn-success');
-});
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/validation.js"></script>
+   <script type="text/javascript" src="js/progress.js"></script>
+  
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="js/btn-change.js"></script>
+   <script type="text/javascript" src="js/progressBarByInput.js"></script>>
 
-$('.btn-2').click(function() {
-  $('.btn-2').toggleClass('btn-success');
-});
+   <script type="text/javascript">
+  	var linkResume = document.querySelector('.button-reg');
+  	linkResume.addEventListener('click', function(){
+  		window.location = 'https://docs.google.com/document/d/1VsVzZSmO8sQlQeUNXHfUdJ9X4i25jPySs7kNuOqhNL0/edit?pli=1#heading=h.cj98vcffvz8e';	
+  	});
   </script>
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     

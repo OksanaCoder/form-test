@@ -1,11 +1,7 @@
+  $('.btn-1').click(function() {
+  $('.btn-1').toggleClass('btn-success');
+});
 
- $('.btn').click(function() {
-    var $this = $(this);
-    if ($this.hasClass('btn-simple')) {
-        $this.removeClass();
-    } else if ($this.hasClass('btn-link')) {
-        $this.removeClass('btn-link').addClass('btn-simple');
-    } else {
-        $this.addClass('btn-simple');
-    }
+$('.btn-2').click(function() {
+  $('.btn-2').toggleClass('btn-success');
 });

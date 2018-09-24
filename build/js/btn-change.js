@@ -1,1 +1,1 @@
-$(".btn").click(function(){var s=$(this);s.hasClass("btn-simple")?s.removeClass():s.hasClass("btn-link")?s.removeClass("btn-link").addClass("btn-simple"):s.addClass("btn-simple")});
+$(".btn-1").click(function(){$(".btn-1").toggleClass("btn-success")}),$(".btn-2").click(function(){$(".btn-2").toggleClass("btn-success")});
