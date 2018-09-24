@@ -1,13 +1,13 @@
-$("form input").keyup(function() {
-  
+  $('#form').on('keyup change paste', 'input, select', function(){
+
 var numValid = 0;
-$("form input[required]").each(function() {
+$("#form input[required], #form select[required]").each(function() {
     if (this.validity.valid) {
         numValid++;
     }
 });
 
-var progress = $("progress"),
+var progress = $(".progress"),
     progressMessage = $(".progress-message");
 
 if (numValid == 0) {
@@ -23,16 +23,12 @@ if (numValid == 2) {
     progressMessage.text("Nothing can stop you now.");
 }
 if (numValid == 3) {
-    progress.attr("value", "60");
-    progressMessage.text("You're basically a hero, right?");
-}
-if (numValid == 4) {
     progress.attr("value", "80");
-    progressMessage.text("They are going to write songs about you.");
-}
-if (numValid == 5) {
-    progress.attr("value", "95");
     progressMessage.text("SO CLOSE.");
 }
-  
+if (numValid == 4) {
+    progress.attr("value", "100");
+    progressMessage.text("They are going to write songs about you.");
+}
+
 });

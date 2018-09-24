@@ -18,61 +18,62 @@
 	    </div>
 	    <div class="col-12 col-md-6 col-sm-12  col-xsm-12 ">
 	    <h3><i>Общая информация</i></h3>
-	   <form action="/action_page.php" id="form">
-		  <div class="form-group">
-		    <label for="name">Фамилия</label>
-		    <input type="text" class="form-control" id="name" required>
-		  </div>
-		  <div class="form-group">
-		    <label for="last-name">Имя</label>
-		    <input type="text" class="form-control" id="last-name" required>
-		  </div>
-		  <div class="form-group">
-		    <label for="surname">Отчество</label>
-		    <input type="text" class="form-control" id="surname" required>
-		  </div>
-		  <div class="form-group">
-		  	<label for="btns">Меняли фамилию?</label>
-		  	 <div class="btns">
-			  	<button type="button" class="btn btn-1">Да</button>
-			  	<button type="button" class="btn btn-1 btn-success">Нет</button>
-		   </div>
-		  </div>
-		   <div class="form-group">
-		  	<label for="btns">Пол</label>
-		  	 <div class="btns">
-			  	<button type="button" class="btn btn-2 btn-success">Муж</button>
-			  	<button type="button" class="btn btn-2">Жен</button>
-		   </div>
-		  </div>
-		  <div class="form-group">
-			  <label for="sel1">Семейное положение:</label>
-			  <select class="form-control" id="sel1">
-			    <option disabled selected>Женат/Замужем</option>
-			    <option>Женат</option>
-			    <option>Замужем</option>
-			  </select>
-			</div>
-			<div class="progress-wrap">
-			<div class="progress-message" id="progress-message">Complete the form!</div>
-			<progress max="100" value="0" id="progress"></progress>
-			   
-			</div>
-			 <div class="form-group">
-			<label for="number">Введите число!</label>
-		    <input type="text" class="form-control" id="number" min="0" max="100">
-		  </div>
-		   <button type="button" class="btn btn-primary">Применить</button>
-		   <div class="progress-wrap">
-			 <div class="progress-message">Ваша форма заполнена на <span class="output">___</span> %</div>	
-			<progress max="100" value="0" id="progress"></progress>
-			</div>
-		</form>
+	  <form action="/action_page.php" id="form">
+  <div class="form-group">
+    <label for="name">Фамилия</label>
+    <input type="text" class="form-control" id="name" required>
+  </div>
+  <div class="form-group">
+    <label for="last-name">Имя</label>
+    <input type="text" class="form-control" id="last-name" required>
+  </div>
+  <div class="form-group">
+    <label for="surname">Отчество</label>
+    <input type="text" class="form-control" id="surname" required>
+  </div>
+  <div class="form-group">
+    <label for="btns">Меняли фамилию?</label>
+     <div class="btns">
+        <button type="button" class="btn btn-1">Да</button>
+        <button type="button" class="btn btn-1 btn-success">Нет</button>
+   </div>
+  </div>
+   <div class="form-group">
+    <label for="btns">Пол</label>
+     <div class="btns">
+        <button type="button" class="btn btn-2 btn-success">Муж</button>
+        <button type="button" class="btn btn-2">Жен</button>
+   </div>
+  </div>
+  <div class="form-group">
+      <label for="sel1">Семейное положение:</label>
+      <select class="form-control" id="sel1" required>
+        <option value="" disabled selected>Женат/Замужем</option>
+        <option value="Женат">Женат</option>
+        <option value="Замужем">Замужем</option>
+      </select>
+    </div>
+    <div class="progress-wrap">
+    <div class="progress-message" id="progress-message">Complete the form!</div>
+    <progress max="100" value="0" class="progress"></progress>
+
+    </div>
+     <div class="form-group">
+    <label for="number">Введите число!</label>
+    <input type="text" class="form-control" id="number" min="0" max="100" required>
+  </div>
+   <button type="button" class="btn btn-primary">Применить</button>
+   <div class="progress-wrap">
+     <div class="progress-message">Ваша форма заполнена на <span class="output">___</span> %</div>  
+    <progress max="100" value="0" class="progress"></progress>
+    </div>
+</form>
 		<div class="button-reg">button says boo</div>
 	    </div>
 	  </div>
 	</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/validation.js"></script>
   <script type="text/javascript" src="js/progress.js">
   	
