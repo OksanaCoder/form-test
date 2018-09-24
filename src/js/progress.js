@@ -1,14 +1,14 @@
-$("#form input").keyup(function() {
+$("form input").keyup(function() {
   
 var numValid = 0;
-$("#form input[required]").each(function() {
+$("form input[required]").each(function() {
     if (this.validity.valid) {
         numValid++;
     }
 });
 
-var progress = $("#progress"),
-    progressMessage = $("#progress-message");
+var progress = $("progress"),
+    progressMessage = $(".progress-message");
 
 if (numValid == 0) {
     progress.attr("value", "0");

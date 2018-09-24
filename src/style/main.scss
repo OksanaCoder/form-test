@@ -44,3 +44,38 @@ fieldset {
     height: 20px;
     margin: 0 0 5px 0;
   }
+
+.button-reg {
+	  display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #fff !important;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button-reg:hover,
+.button-reg:focus {
+    background: #0053ba;
+
+}
+
+
