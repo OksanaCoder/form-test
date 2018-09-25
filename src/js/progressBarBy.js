@@ -3,7 +3,7 @@ btn.addEventListener('click', change_progress);
 function change_progress() {
         var elem = document.getElementById("myBar");
         val = parseInt(document.getElementById("number").value);
-        var message = document.querySelector('.progress-mess').value; 
+        var message = document.querySelector('.progress-mess'); 
         var width = 0;
         var id = setInterval(frame, val);
         function frame() {
@@ -13,6 +13,7 @@ function change_progress() {
                 width++; 
                 elem.style.width = width + '%';
                 elem.innerHTML = width * 1  + '%';
+                message.innerHTML = elem;
             }
         }  
     }
